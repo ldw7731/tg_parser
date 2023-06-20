@@ -83,15 +83,15 @@ group_id bigserial not null unique PRIMARY KEY,
 title text,
 photo bigserial,
 date timestamp,
-verified bool,
-megagroup bool,
-signatures bool,
-scam bool,
-fake bool,
-gigagroup bool,
-join_to_send bool,
-join_request bool,
-forum bool,
+verified boolean,
+megagroup boolean,
+signatures boolean,
+scam boolean,
+fake boolean,
+gigagroup boolean,
+join_to_send boolean,
+join_request boolean,
+forum boolean,
 access_hash int8,
 participants_count serial4
 );
@@ -99,7 +99,7 @@ participants_count serial4
 CREATE TABLE tg_photos (
 photo_id bigserial not null unique PRIMARY KEY,
 dc_id smallserial,
-has_video bool,
+has_video boolean,
 stripped_thumb bytea,
 rfile_reference bytea
 );
